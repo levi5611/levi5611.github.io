@@ -8,7 +8,7 @@
       <link href="/2024/03/24/plan/"/>
       <url>/2024/03/24/plan/</url>
       
-        <content type="html"><![CDATA[<h1 id="需要学习的知识点："><a href="#需要学习的知识点：" class="headerlink" title="需要学习的知识点："></a>需要学习的知识点：</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br></pre></td></tr></table></figure><p><img src="/2024/03/24/plan/1.png"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="需要学习的知识点："><a href="#需要学习的知识点：" class="headerlink" title="需要学习的知识点："></a>需要学习的知识点：</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    sd=<span class="number">1</span></span><br></pre></td></tr></table></figure><p><img src="/2024/03/24/plan/1.png"></p>]]></content>
       
       
       
