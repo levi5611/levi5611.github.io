@@ -8,7 +8,7 @@
       <link href="/2024/03/24/plan/"/>
       <url>/2024/03/24/plan/</url>
       
-        <content type="html"><![CDATA[<p><img src="/2024/03/24/plan/A中科大\MyBlog\source_posts\plan\2024-03-24-22-55-31-image.png"></p><p>收到附件是领导看</p><p>$1^2$</p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/2024/03/24/plan/A中科大\MyBlog\source_posts\plan\2024-03-24-22-55-31-image.png"></p><p>收到附件是领导看</p><p>$1^2$</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
