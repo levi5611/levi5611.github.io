@@ -4,17 +4,17 @@
   
     
     <entry>
-      <title>MyfirstBlog</title>
-      <link href="/2024/03/23/myfirstblog/"/>
-      <url>/2024/03/23/myfirstblog/</url>
+      <title>小张的学习计划</title>
+      <link href="/2024/03/24/plan/"/>
+      <url>/2024/03/24/plan/</url>
       
-        <content type="html"><![CDATA[<h1 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h1><p>欢迎你！</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="需要学习的知识点："><a href="#需要学习的知识点：" class="headerlink" title="需要学习的知识点："></a>需要学习的知识点：</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br></pre></td></tr></table></figure><p><img src="C:\Users\Lenovo\AppData\Roaming\marktext\images\2024-03-24-20-46-50-image.png"></p>]]></content>
       
       
       
         <tags>
             
-            <tag> none </tag>
+            <tag> 计划 </tag>
             
         </tags>
       
