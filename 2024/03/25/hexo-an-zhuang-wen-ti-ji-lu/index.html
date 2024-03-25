@@ -462,14 +462,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    686
+                    750
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 
@@ -540,6 +540,12 @@
 </li>
 <li><p>数学公式渲染不出来</p>
 <p>解决方案：采取这个博客的方法即可<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e8d433a2c5b7">如何在 hexo 中支持 Mathjax？ - 简书 (jianshu.com)</a></p>
+</li>
+<li><p>hexo g的时候报ERROR Render HTML failed: archives/index.html的错误，归档页面不显示</p>
+<p>解决方案：按照这个<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/issues/72">编译时，archive.ejs报错 · Issue #72 · blinkfox/hexo-theme-matery · GitHub</a>方法，删去下面三行代码即可。</p>
+<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token comment"># year. </span><span class="token delimiter punctuation">%></span></span>
+<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token comment"># month. </span><span class="token delimiter punctuation">%></span></span>
+<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token comment"># every day posts. </span><span class="token delimiter punctuation">%></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
 
@@ -1054,7 +1060,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">776</span>&nbsp;字
+                class="white-color">840</span>&nbsp;字
             
             
             
@@ -1277,6 +1283,22 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 </body>
 
