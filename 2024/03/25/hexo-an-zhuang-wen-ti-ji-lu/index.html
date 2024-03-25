@@ -462,14 +462,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    299
+                    685
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -492,7 +492,9 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="记录配置hexo过程中遇到的问题和解决方案"><a href="#记录配置hexo过程中遇到的问题和解决方案" class="headerlink" title="记录配置hexo过程中遇到的问题和解决方案"></a>记录配置hexo过程中遇到的问题和解决方案</h1><ol>
+                <h1 id="记录配置hexo过程中遇到的问题和解决方案"><a href="#记录配置hexo过程中遇到的问题和解决方案" class="headerlink" title="记录配置hexo过程中遇到的问题和解决方案"></a>记录配置hexo过程中遇到的问题和解决方案</h1><h2 id="前置："><a href="#前置：" class="headerlink" title="前置："></a>前置：</h2><p><strong>我的hexo基础环境安装参考</strong>: <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV16b4y1G7fo/?share_source=copy_web&amp;vd_source=e7be07c5eec07ab5d2b72f2903f2835e">https://www.bilibili.com/video/BV16b4y1G7fo/?share_source=copy_web&amp;vd_source=e7be07c5eec07ab5d2b72f2903f2835e</a></p>
+<p><strong>主题方案以及附属功能参考这个GitHub项目</strong>：<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">blinkfox/hexo-theme-matery: A beautiful hexo blog theme with material design and responsive design.一个基于材料设计和响应式设计而成的全面、美观的Hexo主题。国内访问：http://blinkfox.com (github.com)</a></p>
+<h2 id="遇到的问题："><a href="#遇到的问题：" class="headerlink" title="遇到的问题："></a>遇到的问题：</h2><ol>
 <li><p>使用marktext写完之后的md文件中的图片渲染不到hexo上</p>
 <p>解决方案：md文件中的图片路径要使用相对路径，每次将要用的图片放入到md文件同一个目录下的同名文件夹中，比如写了一个<code>plan.md</code>文件，里面用到的图片放入名字为<code>plan</code>的文件夹中。</p>
 </li>
@@ -511,12 +513,35 @@
   <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
   <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
   <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如果要修改代码模板，则需要前往 <a target="_blank" rel="noopener" href="https://prismjs.com/download.html">prismjs 下载页面</a> 定制下载自己喜欢的主题 <code>css</code> 文件，然后将此 css 主题文件取名为 <code>prism.css</code>，替换掉 <code>hexo-theme-matery</code> 主题文件夹中的 <code>source/libs/prism/prism.css</code> 文件即可。</p>
-<ol>
+<p>如果要修改代码模板，则需要前往 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e8d433a2c5b7">prismjs 下载页面](https://prismjs.com/download.html) 定制下载自己喜欢的主题 <code>css</code> 文件，然后将此 css 主题文件取名为 <code>prism.css</code>，替换掉 <code>hexo-theme-matery</code> 主题文件夹中的 <code>source/libs/prism/prism.css</code> 文件即可。</a></p>
+</li>
 <li><p>数学公式渲染不出来</p>
-<p>解决方案：采取这个博客的方法即可<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e8d433a2c5b7">如何在 hexo 中支持 Mathjax？ - 简书 (jianshu.com)</a></p>
+<p>解决方案：采取这个博客的方法即可[如何在 hexo 中支持 Mathjax？ - 简书 (jianshu.com)</p>
 </li>
 </ol>
+<ol>
+<li><p>使用marktext写完之后的md文件中的图片渲染不到hexo上</p>
+<p>解决方案：md文件中的图片路径要使用相对路径，每次将要用的图片放入到md文件同一个目录下的同名文件夹中，比如写了一个<code>plan.md</code>文件，里面用到的图片放入名字为<code>plan</code>的文件夹中。</p>
+</li>
+<li><p>按照GitHub上面的方案代码并没有高亮</p>
+<p>解决方案：在hexo根目录下中的<code>_config.yml</code>文件中，除了在<code>highlight</code>下添加<code>enable: false</code>，<code>prismjs</code>下添加<code>enable: true</code>之外，还需要修改<code>syntax_highlighter</code>值为<code>prismjs</code>。最后设置如下：</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">syntax_highlighter</span><span class="token punctuation">:</span> prismjs
+<span class="token key atrule">highlight</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">auto_detect</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token key atrule">wrap</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">hljs</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">prismjs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果要修改代码模板，则需要前往 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e8d433a2c5b7">prismjs 下载页面](https://prismjs.com/download.html) 定制下载自己喜欢的主题 <code>css</code> 文件，然后将此 css 主题文件取名为 <code>prism.css</code>，替换掉 <code>hexo-theme-matery</code> 主题文件夹中的 <code>source/libs/prism/prism.css</code> 文件即可。</a></p>
+</li>
+<li><p>数学公式渲染不出来</p>
+<p>解决方案：采取这个博客的方法即可<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e8d433a2c5b7">如何在 hexo 中支持 Mathjax？ - 简书 (jianshu.com)</a></p>
 </li>
 </ol>
 
@@ -1031,7 +1056,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">389</span>&nbsp;字
+                class="white-color">775</span>&nbsp;字
             
             
             
@@ -1254,6 +1279,22 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 </body>
 

@@ -573,9 +573,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                记录配置hexo过程中遇到的问题和解决方案
-使用marktext写完之后的md文件中的图片渲染不到hexo上
-解决方案：md文件中的图片路径要使用相对路径，每次将要用的图片放入到md文件同一个目录下的同名文件夹中，比如写了一个plan.md
+                                记录配置hexo过程中遇到的问题和解决方案前置：我的hexo基础环境安装参考: https://www.bilibili.com/video/BV16b4y1G7fo/?share_source=copy_web&amp;vd_source
                             
                         </div>
                         <div class="publish-info">
@@ -754,7 +752,7 @@ for i in range(10)
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">389</span>&nbsp;字
+                class="white-color">775</span>&nbsp;字
             
             
             
@@ -977,6 +975,22 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 </body>
 
