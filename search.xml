@@ -8,7 +8,7 @@
       <link href="/2024/03/24/plan/"/>
       <url>/2024/03/24/plan/</url>
       
-        <content type="html"><![CDATA[<p><img src="/2024/03/24/plan/A中科大\MyBlog\source_posts\plan\2024-03-24-22-55-31-image.png"></p><p>收到附件是领导看</p><p>$1^2$</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<p><img src="/2024/03/24/plan/A中科大\MyBlog\source\_posts\plan\2024-03-24-22-55-31-image.png" alt></p><p>收到附件是领导看</p><p>$1^2$</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
       
       
       
