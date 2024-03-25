@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>hexo安装问题记录</title>
+      <link href="/2024/03/25/hexo-an-zhuang-wen-ti-ji-lu/"/>
+      <url>/2024/03/25/hexo-an-zhuang-wen-ti-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="记录配置hexo过程中遇到的问题和解决方案"><a href="#记录配置hexo过程中遇到的问题和解决方案" class="headerlink" title="记录配置hexo过程中遇到的问题和解决方案"></a>记录配置hexo过程中遇到的问题和解决方案</h1><ol><li><p>使用marktext写完之后的md文件中的图片渲染不到hexo上</p><p>解决方案：md文件中的图片路径要使用相对路径，每次将要用的图片放入到md文件同一个目录下的同名文件夹中，比如写了一个<code>plan.md</code>文件，里面用到的图片放入名字为<code>plan</code>的文件夹中。</p></li><li><p>按照GitHub上面的方案代码并没有高亮</p><p>解决方案：在hexo根目录下中的<code>_config.yml</code>文件中，除了在<code>highlight</code>下添加<code>enable: false</code>，<code>prismjs</code>下添加<code>enable: true</code>之外，还需要修改<code>syntax_highlighter</code>值为<code>prismjs</code>。最后设置如下：</p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">syntax_highlighter</span><span class="token punctuation">:</span> prismjs<span class="token key atrule">highlight</span><span class="token punctuation">:</span>  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">auto_detect</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span>  <span class="token key atrule">wrap</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">hljs</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span class="token key atrule">prismjs</span><span class="token punctuation">:</span>  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如果要修改代码模板，则需要前往 <a href="https://prismjs.com/download.html">prismjs 下载页面</a> 定制下载自己喜欢的主题 <code>css</code> 文件，然后将此 css 主题文件取名为 <code>prism.css</code>，替换掉 <code>hexo-theme-matery</code> 主题文件夹中的 <code>source/libs/prism/prism.css</code> 文件即可。</p><ol><li><p>数学公式渲染不出来</p><p>解决方案：采取这个博客的方法即可<a href="https://www.jianshu.com/p/e8d433a2c5b7">如何在 hexo 中支持 Mathjax？ - 简书 (jianshu.com)</a></p></li></ol></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 环境配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2024/03/24/plan/"/>
       <url>/2024/03/24/plan/</url>
       
-        <content type="html"><![CDATA[<p><img src="/2024/03/24/plan/A中科大\MyBlog\source\_posts\plan\2024-03-24-22-55-31-image.png" alt></p><p>收到附件是领导看</p><p>$1^2$</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<p>收到附件是领导看</p><p>$1^2$</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
       
       
       
